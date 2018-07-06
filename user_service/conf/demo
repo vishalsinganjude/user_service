@@ -1,0 +1,26 @@
+curl -X POST \
+  http://0.0.0.0:8092/login \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 702ab994-dcc8-a772-d056-9445e52b9237' \
+  -d '{
+	"username": "hemantbadhe",
+	"password": "Hemant@13",
+	"clientId": "123"
+}' \
+--cookie "auth_key=35dbb264-95e2-43f0-af15-35e7c1c3f0ea"
+
+curl -X DELETE\
+  http://0.0.0.0:8092/logout
+  -H 'cache-control: no-cache'
+  -H 'content-type: application/json'
+  -H 'postman-token: 4dc6c561-7d2f-63c0-3d75-cd947d0cd1e6'
+  -d '{
+    }' --cookie "auth_key=35dbb264-95e2-43f0-af15-35e7c1c3f0ea"
+
+curl -X DELETE \
+  http://0.0.0.0:8092/logout \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: d1616472-535f-5540-ea9c-e4ee604ba17a'
+--cookie "auth_key=738807cd-bf46-4e81-bc0a-c3a31449a772
